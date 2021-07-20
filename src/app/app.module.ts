@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,13 +9,14 @@ import { ListCitaComponent } from './components/list-cita/list-cita.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     CrearCitaComponent,
     ListCitaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
